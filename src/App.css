@@ -1,38 +1,241 @@
-.App {
-  text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none !important;
+    text-decoration: none !important;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .navtabnone {
+    display: none !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navtabblock {
+    display: block !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Setcolor1 {
+    color: red;
 }
 
-.App-link {
-  color: #61dafb;
+.Setcolor1 {
+    color: blue;
+} */
+
+.box {
+    background-color: blue;
+    height: 150px;
+    padding: 20px;
+    width: 400px;
+    position: fixed;
+    top: 45%;
+    left: 40%;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .as {
+    left: 0;
+    top: 0;
+} */
+
+
+/* 
+.slick-center {
+    transform: scale(0.900);
+} */
+
+/* after slide  */
+/* .slick-current+.slick-slide {
+    transform: scale(0.683);
+}
+
+.slick-current+.slick-slide+.slick-slide {
+    transform: scale(0.380);
+} */
+
+/* before slide  */
+/* .slick-track .slick-slide:has(+.slick-current) {
+    transform: scale(0.683) !important;
+
+}
+
+.slick-slide:has(+.slick-slide+.slick-current) {
+    transform: scale(0.380) !important;
+  
+
+}
+
+.max-width1 {
+    max-width: 864px !important;
+}
+
+.w-62 {
+    width: 62px;
+} */
+
+
+
+.max-864 {
+    max-width: 864px;
+}
+
+.w_62 {
+    width: 62px;
+}
+
+.slick-track {
+    padding-block: 100px;
+}
+
+.slick-current img {
+    transform: scale(2.5161);
+}
+
+.slick-current+.slick-slide img {
+    transform: scale(1.871);
+}
+
+.slick-track .slick-slide:has(+.slick-current) {
+    transform: scale(1.871);
+}
+
+.asd {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.imgwe {
+    position: relative;
+}
+
+.imgwe::after {
+    content: url(./assets/image/png/circle.png);
+    position: absolute;
+    top: -115%;
+    left: -9%;
+    opacity: 0;
+
+}
+
+.slick-current .imgwe::after {
+    opacity: 1;
+}
+
+
+/* accordin */
+.accordion {
+    width: 100%;
+}
+
+.accordion-item {
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+.accordion-title {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.accordion-content.open {
+    max-height: 200px;
+
+}
+
+
+/* Navtabs */
+
+/* .btn {
+    background-color: blue;
+    border-radius: 20px;
+    border: 1px black solid;
+} */
+.bg {
+    background-color: transparent;
+}
+
+
+
+
+/* fromevalidation */
+.registration-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.error {
+    border-color: #ff0000;
+}
+
+.error-message {
+    color: #ff0000;
+    margin-top: 5px;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.success-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border: 1px solid #007bff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+.success-popup p {
+    margin-bottom: 10px;
+}
+
+.success-popup button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.success-popup button:hover {
+    background-color: #0056b3;
 }
